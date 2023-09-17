@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Удалить магазин</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Удалить магазин</h1>
+    <form method="post">{% csrf_token %}
+        <p>Вы хотите удалить магазин? "{{ object.address }}"?</p>
+        {{ form }}
+        <input type="submit" value="Удалить">
+    </form>
+</body>
+</html>

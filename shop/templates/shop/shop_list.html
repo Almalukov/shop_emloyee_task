@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список магазинов</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Список магазинов</h1>
+    <a href="{% url 'shop-create'%}" class="add-button">Добавить магазин</a>
+    <ul>
+        {% for shop in shops %}
+            <li>{{ shop.number }} - {{ shop.address }} 
+                <a href="{% url 'shop-delete' shop.id %}" class="delete-button">Удалить</a>
+                <a href="{% url 'shop-update' shop.id %}" class="update-button">Редактировать</a>
+                <a href="{% url 'shop_employees' shop.id %}" class="update-button">Сотрудники магазина</a> </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

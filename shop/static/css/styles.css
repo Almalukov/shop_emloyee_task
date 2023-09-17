@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    color: rgb(3, 3, 3);
+    border: 1px solid red;
+    margin: 5px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(12, 12, 12);
+    padding: 10px;
+    text-align: left;
+}
+
+/* Стиль для кнопки "Добавить магазин" */
+.add-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px; /* Добавляем закругление углов */
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background-color: red; /* Изменяем цвет при наведении */
+    border-color: red;
+}
+
+/* Стиль для кнопки "Удалить" */
+.delete-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px; /* Добавляем закругление углов */
+    text-decoration: none;
+}
+
+.delete-button:hover {
+    background-color: red; /* Изменяем цвет при наведении */
+    border-color: red;
+}
+
+/* Стиль для кнопки "Удалить" */
+.update-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px; /* Добавляем закругление углов */
+    text-decoration: none;
+}
+
+.update-button:hover {
+    background-color: red; /* Изменяем цвет при наведении */
+    border-color: red;
+}
+
+a.delete-button,
+a.edit-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px; /* Добавляем закругление углов */
+    text-decoration: none;
+    margin-right: 5px; /* Добавляем отступ справа между кнопками */
+}
+
+a.delete-button:hover,
+a.edit-button:hover {
+    background-color: red; /* Изменяем цвет при наведении */
+    border-color: red;
+}
